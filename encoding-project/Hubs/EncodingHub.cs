@@ -4,9 +4,9 @@ namespace SignalRChat.Hubs
 {
     public class EncodingHub : Hub
     {
-        public async Task SendMessage(string user, string message)
+        public async Task SendMessage(string encode)
         {
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            await Clients.All.SendAsync("ReceiveMessage", $"Message received: {encode}");
         }
     }
 }

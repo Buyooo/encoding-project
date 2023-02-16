@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import './encoding';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">  
+      <h1>Encoding UI</h1>
+
+      <label>Encode string:</label>
+      <input type='text' id='input-encoding'>
+      </input>
+
+      <button id='encode-button'>Encode this string</button>
+
+      <br/>
+
+      <label>Encoded string response:</label>
+      <input type='text' id='output-encoding'>
+      </input> 
     </div>
   );
 }
