@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encoding-project", "encoding-project\encoding-project.csproj", "{A7CAFCD8-EA97-4797-BB7D-A09830B68214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "encoding-project", "encoding-project\encoding-project.csproj", "{A7CAFCD8-EA97-4797-BB7D-A09830B68214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encoding-test", "encoding-test\encoding-test.csproj", "{D7C7D107-C8A7-477C-8C21-AD053EC9E9B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A7CAFCD8-EA97-4797-BB7D-A09830B68214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7CAFCD8-EA97-4797-BB7D-A09830B68214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7CAFCD8-EA97-4797-BB7D-A09830B68214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C7D107-C8A7-477C-8C21-AD053EC9E9B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C7D107-C8A7-477C-8C21-AD053EC9E9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C7D107-C8A7-477C-8C21-AD053EC9E9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C7D107-C8A7-477C-8C21-AD053EC9E9B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
