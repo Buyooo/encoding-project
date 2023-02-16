@@ -12,8 +12,10 @@ window.addEventListener("load", () => {
         console.log(data);
     });
 
-    connection.on("ReceiveMessage", function (message) {
-        document.getElementById("output-encoding").value = message;
+    connection.on("ReceiveMessage", function (message, delay) {
+        console.log(`Random delay: ${delay}`);
+        let currentValue = document.getElementById("output-encoding").value
+        document.getElementById("output-encoding").value = currentValue + message;
     });
 
     connection.start().then(function () {
@@ -24,7 +26,7 @@ window.addEventListener("load", () => {
 
     document.getElementById("encode-button").addEventListener("click", function (event) {
         var encodeString = document.getElementById("input-encoding").value;
-        connection.invoke("SendMessage", encodeString).catch(function (err) {
+        connection.invoke("Encode", encodeString).catch(function (err) {
             return console.error(err.toString());
         });
         event.preventDefault();
